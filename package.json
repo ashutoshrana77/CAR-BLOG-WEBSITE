@@ -6,6 +6,9 @@
   "engines": {
     "node": ">=20.0.0"
   },
+  "overrides": {
+    "esbuild": "^0.28.0"
+  },
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
