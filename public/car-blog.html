@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India's 10 Most Sold Cars Till Now</title>
+  <meta name="description" content="A curated overview of India's 10 most iconic and best-selling cars of all time, including prices, average life, and historical context.">
+  <meta property="og:title" content="India's 10 Most Sold Cars Till Now">
+  <meta property="og:description" content="From the iconic Maruti 800 to the latest SUVs, these cars shaped how India moves.">
+  <meta property="og:type" content="website">
+
+  <!-- Clean Sans-Serif Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: #f8f9fa;
+      color: #171717;
+      line-height: 1.6;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Dark Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background-color: rgba(10, 10, 10, 0.96);
+      backdrop-filter: blur(8px);
+      color: #ffffff;
+      border-bottom: 1px solid #262626;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+      height: 4.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .brand-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 0.75rem;
+      background: #1f1f1f;
+      border: 1px solid #333333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fbbf24;
+      font-size: 1.2rem;
+    }
+
+    .brand-text h1 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+    }
+
+    .brand-text span {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #a3a3a3;
+    }
+
+    nav.desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    nav.desktop-nav a {
+      color: #d4d4d4;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 0.5rem 0.875rem;
+      border-radius: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    nav.desktop-nav a:hover,
+    nav.desktop-nav a.active {
+      color: #ffffff;
+      background-color: #262626;
+    }
+
+    .menu-btn {
+      display: none;
+      background: none;
+      border: 1px solid #333333;
+      color: #ffffff;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 1.25rem;
+    }
+
+    .mobile-menu {
+      display: none;
+      background-color: #0a0a0a;
+      border-top: 1px solid #262626;
+      padding: 1rem 1.25rem 1.5rem;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    .mobile-menu a {
+      color: #e5e5e5;
+      text-decoration: none;
+      padding: 0.6rem 0.75rem;
+      border-radius: 0.5rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .mobile-menu a:hover {
+      background-color: #262626;
+      color: #ffffff;
+    }
+
+    /* Hero / Intro Section */
+    .intro-section {
+      background-color: #ffffff;
+      border-bottom: 1px solid #e5e5e5;
+      padding: 3.5rem 1.25rem 3rem;
+    }
+
+    .intro-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .editorial-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: #f5f5f5;
+      color: #404040;
+      border: 1px solid #d4d4d4;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    .intro-section h2 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: #0f172a;
+      margin-bottom: 1rem;
+    }
+
+    .intro-subheading {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #334155;
+      line-height: 1.4;
+      margin-bottom: 1.25rem;
+    }
+
+    .intro-text {
+      font-size: 1.05rem;
+      color: #4b5563;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    /* Quick Jump Pills */
+    .quick-jump-box {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #f0f0f0;
+    }
+
+    .quick-jump-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #6b7280;
+      margin-bottom: 0.75rem;
+    }
+
+    .pills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .pill-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 0.5rem;
+      background-color: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      color: #1f2937;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      transition: all 0.15s ease;
+    }
+
+    .pill-link:hover {
+      background-color: #e5e7eb;
+      border-color: #d1d5db;
+    }
+
+    .pill-rank {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.25rem;
+      height: 1.25rem;
+      border-radius: 9999px;
+      background-color: #111827;
+      color: #ffffff;
+      font-size: 0.65rem;
+      font-weight: 700;
+    }
+
+    /* Main Car Sections List */
+    main {
+      flex: 1;
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 3.5rem;
+    }
+
+    .car-card {
+      scroll-margin-top: 6rem;
+      background-color: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 1.25rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.03);
+      overflow: hidden;
+      margin-bottom: 3rem;
+      transition: box-shadow 0.25s ease, transform 0.25s ease;
+    }
+
+    .car-card:hover {
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.08), 0 8px 10px -6px rgba(0,0,0,0.03);
+    }
+
+    .car-header {
+      padding: 1.25rem 1.75rem;
+      background-color: #fafafa;
+      border-bottom: 1px solid #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .car-title-group {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .car-rank-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 0.75rem;
+      background-color: #0f172a;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .car-meta-manufacturer {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #64748b;
+    }
+
+    .car-title {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.2;
+    }
+
+    .anchor-share-btn {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #475569;
+      text-decoration: none;
+      padding: 0.4rem 0.75rem;
+      border-radius: 0.5rem;
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+      transition: all 0.15s ease;
+    }
+
+    .anchor-share-btn:hover {
+      background: #f1f5f9;
+      color: #0f172a;
+    }
+
+    /* Hero Image */
+    .hero-image-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      max-height: 480px;
+      background-color: #0f172a;
+      overflow: hidden;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .car-card:hover .hero-image {
+      transform: scale(1.02);
+    }
+
+    .image-tag-overlay {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(4px);
+      color: #ffffff;
+      padding: 0.35rem 0.75rem;
+      border-radius: 0.5rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    /* Content & Specs */
+    .car-body {
+      padding: 1.75rem;
+    }
+
+    .spec-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.85rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .spec-box {
+      padding: 1rem;
+      border-radius: 0.75rem;
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+    }
+
+    .spec-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #64748b;
+      margin-bottom: 0.35rem;
+    }
+
+    .spec-value {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #0f172a;
+      line-height: 1.4;
+    }
+
+    .context-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #64748b;
+      margin-bottom: 0.75rem;
+    }
+
+    .car-description {
+      font-size: 1.025rem;
+      color: #334155;
+      line-height: 1.75;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      max-width: 72ch;
+    }
+
+    .car-footer {
+      margin-top: 1.75rem;
+      padding-top: 1rem;
+      border-top: 1px solid #f1f5f9;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+
+    .car-footer a {
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .car-footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* About Section */
+    .about-section {
+      scroll-margin-top: 6rem;
+      background-color: #ffffff;
+      border-top: 1px solid #e5e5e5;
+      padding: 3.5rem 1.25rem;
+    }
+
+    .about-card {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 1.25rem;
+      padding: 2.25rem;
+    }
+
+    .about-card h3 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 1rem;
+    }
+
+    .about-card p {
+      font-size: 1.05rem;
+      color: #475569;
+      line-height: 1.7;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0a0a0a;
+      color: #a3a3a3;
+      border-top: 1px solid #262626;
+      padding: 2.5rem 1.25rem;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    footer p {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .desktop-nav {
+        display: none;
+      }
+      .menu-btn {
+        display: block;
+      }
+      .intro-section h2 {
+        font-size: 2.1rem;
+      }
+      .hero-image-wrapper {
+        height: 240px;
+      }
+      .spec-grid {
+        grid-template-columns: 1fr;
+      }
+      .car-title {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dark Header with Navigation -->
+  <header>
+    <div class="header-container">
+      <a href="#home" class="brand-logo">
+        <div class="brand-icon">🚗</div>
+        <div class="brand-text">
+          <h1>India's 10 Most Sold Cars</h1>
+          <span>All-Time Bestsellers</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#top-10">Top 10</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="#home" onclick="closeMobileMenu()">Home</a>
+      <a href="#top-10" onclick="closeMobileMenu()">Top 10 Cars</a>
+      <a href="#about" onclick="closeMobileMenu()">About This Blog</a>
+    </nav>
+  </header>
+
+  <!-- Intro Section Above the List -->
+  <section class="intro-section" id="home">
+    <div class="intro-container">
+      <div class="editorial-badge">
+        <span>★ Automotive Retrospective</span>
+      </div>
+      <h2>India's 10 Most Sold Cars Till Now</h2>
+      <p class="intro-subheading">From the iconic Maruti 800 to the latest SUVs, these cars shaped how India moves.</p>
+      <p class="intro-text">
+        Over the decades, a few models have dominated Indian roads, combining affordability, reliability, and mass appeal. This blog highlights 10 of the most sold and influential cars in India, along with their typical price, average life, and why they became so popular.
+      </p>
+
+      <!-- Quick Navigation Table of Contents -->
+      <div class="quick-jump-box" id="top-10">
+        <p class="quick-jump-title">Quick Navigation (Jump to Model)</p>
+        <div class="pills-container">
+          <a href="#maruti-800" class="pill-link"><span class="pill-rank">1</span> Maruti 800</a>
+          <a href="#alto" class="pill-link"><span class="pill-rank">2</span> Maruti Alto</a>
+          <a href="#swift" class="pill-link"><span class="pill-rank">3</span> Maruti Swift</a>
+          <a href="#hyundai-creta" class="pill-link"><span class="pill-rank">4</span> Hyundai Creta</a>
+          <a href="#tata-nexon" class="pill-link"><span class="pill-rank">5</span> Tata Nexon</a>
+          <a href="#maruti-wagon-r" class="pill-link"><span class="pill-rank">6</span> Maruti Wagon R</a>
+          <a href="#maruti-dzire" class="pill-link"><span class="pill-rank">7</span> Maruti Dzire</a>
+          <a href="#mahindra-scorpio" class="pill-link"><span class="pill-rank">8</span> Mahindra Scorpio</a>
+          <a href="#maruti-baleno" class="pill-link"><span class="pill-rank">9</span> Maruti Baleno</a>
+          <a href="#tata-punch" class="pill-link"><span class="pill-rank">10</span> Tata Punch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 Car Sections -->
+  <main>
+
+    <!-- 1) Maruti 800 -->
+    <article class="car-card" id="maruti-800">
+      <div class="car-header">
+        <div class="car-title-group">
+          <div class="car-rank-badge">#1</div>
+          <div>
+            <div class="car-meta-manufacturer">Maruti Suzuki</div>
+            <h3 class="car-title">Maruti 800</h3>
+          </div>
+        </div>
+        <a href="#maruti-800" class="anchor-share-btn">#maruti-800</a>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img 
+          src="images/maruti_800_hero_1789928325887.jpg" 
+          alt="Maruti 800 by Maruti Suzuki" 
+          class="hero-image"
+          loading="lazy"
+        >
+        <div class="image-tag-overlay">Top 10 Indian Automotive Icons • Rank #1</div>
+      </div>
+
+      <div class="car-body">
+        <div class="spec-grid">
+          <div class="spec-box">
+            <div class="spec-label">Approx. Cumulative Sales</div>
+            <div class="spec-value">Over 27 lakh units sold in India before discontinuation. [81]</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Price (Last Known)</div>
+            <div class="spec-value">Around ₹2.4–3.0 lakh (ex-showroom, before discontinuation).</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Average Life</div>
+            <div class="spec-value">Typically 12–15 years or 1.5–2.0 lakh km with regular maintenance.</div>
+          </div>
+        </div>
+
+        <div class="context-title">Context & History</div>
+        <div class="car-description">
+          <p>The Maruti 800 is often called the car that motorised India's middle class. Launched in 1983, it became the default choice for families, taxi operators, and first-time car buyers.</p>
+          <p>Its small size, low running cost, and easy maintenance made it an icon on Indian roads for over three decades.</p>
+          <p>Though discontinued in 2014 due to stricter safety and emission norms, the Maruti 800 remains a cultural symbol of affordable mobility.</p>
+        </div>
+
+        <div class="car-footer">
+          <span>Model #1 of 10 • Maruti Suzuki</span>
+          <a href="#top-10">Back to Top ↑</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2) Maruti Alto (Alto 800 / Alto K10) -->
+    <article class="car-card" id="alto">
+      <div class="car-header">
+        <div class="car-title-group">
+          <div class="car-rank-badge">#2</div>
+          <div>
+            <div class="car-meta-manufacturer">Maruti Suzuki</div>
+            <h3 class="car-title">Maruti Alto (Alto 800 / Alto K10)</h3>
+          </div>
+        </div>
+        <a href="#alto" class="anchor-share-btn">#alto</a>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img 
+          src="images/alto_k10_hero_1789928343275.jpg" 
+          alt="Maruti Alto (Alto 800 / Alto K10) by Maruti Suzuki" 
+          class="hero-image"
+          loading="lazy"
+        >
+        <div class="image-tag-overlay">Top 10 Indian Automotive Icons • Rank #2</div>
+      </div>
+
+      <div class="car-body">
+        <div class="spec-grid">
+          <div class="spec-box">
+            <div class="spec-label">Approx. Cumulative Sales</div>
+            <div class="spec-value">Multiple generations; Alto has been India's best-selling car for many years, with several lakh units sold annually at its peak. [99]</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Price (Current Alto K10)</div>
+            <div class="spec-value">Roughly ₹3.9–5.5 lakh (ex-showroom, varies by variant).</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Average Life</div>
+            <div class="spec-value">Around 12–15 years or 1.5–2.0 lakh km with proper care.</div>
+          </div>
+        </div>
+
+        <div class="context-title">Context & History</div>
+        <div class="car-description">
+          <p>The Maruti Alto family (Alto 800 and Alto K10) has dominated India's entry-level hatchback segment for years.</p>
+          <p>Known for low purchase price, excellent fuel efficiency, and low maintenance cost, the Alto became the go-to car for first-time buyers and city commuters.</p>
+          <p>Its compact dimensions make it ideal for crowded Indian streets, while its strong resale value keeps it popular in the used-car market.</p>
+        </div>
+
+        <div class="car-footer">
+          <span>Model #2 of 10 • Maruti Suzuki</span>
+          <a href="#top-10">Back to Top ↑</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3) Maruti Swift -->
+    <article class="car-card" id="swift">
+      <div class="car-header">
+        <div class="car-title-group">
+          <div class="car-rank-badge">#3</div>
+          <div>
+            <div class="car-meta-manufacturer">Maruti Suzuki</div>
+            <h3 class="car-title">Maruti Swift</h3>
+          </div>
+        </div>
+        <a href="#swift" class="anchor-share-btn">#swift</a>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img 
+          src="images/swift_hero_1789928354576.jpg" 
+          alt="Maruti Swift by Maruti Suzuki" 
+          class="hero-image"
+          loading="lazy"
+        >
+        <div class="image-tag-overlay">Top 10 Indian Automotive Icons • Rank #3</div>
+      </div>
+
+      <div class="car-body">
+        <div class="spec-grid">
+          <div class="spec-box">
+            <div class="spec-label">Approx. Cumulative Sales</div>
+            <div class="spec-value">Multiple generations; several lakh units sold since launch, consistently among top hatchbacks. [76]</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Price (Current)</div>
+            <div class="spec-value">Approximately ₹5.5–8.5 lakh (ex-showroom, varies by variant and fuel type).</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Average Life</div>
+            <div class="spec-value">About 12–15 years or 1.5–2.0 lakh km with regular service.</div>
+          </div>
+        </div>
+
+        <div class="context-title">Context & History</div>
+        <div class="car-description">
+          <p>The Maruti Swift redefined the premium hatchback segment in India with its sporty design, peppy engines, and fun-to-drive character.</p>
+          <p>Since its introduction, it has attracted young buyers and driving enthusiasts who want style and performance without moving to a larger car.</p>
+          <p>Strong brand trust, good mileage, and a wide service network have kept the Swift among India's most popular cars across generations.</p>
+        </div>
+
+        <div class="car-footer">
+          <span>Model #3 of 10 • Maruti Suzuki</span>
+          <a href="#top-10">Back to Top ↑</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4) Hyundai Creta -->
+    <article class="car-card" id="hyundai-creta">
+      <div class="car-header">
+        <div class="car-title-group">
+          <div class="car-rank-badge">#4</div>
+          <div>
+            <div class="car-meta-manufacturer">Hyundai</div>
+            <h3 class="car-title">Hyundai Creta</h3>
+          </div>
+        </div>
+        <a href="#hyundai-creta" class="anchor-share-btn">#hyundai-creta</a>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img 
+          src="images/creta_hero_1789928366509.jpg" 
+          alt="Hyundai Creta by Hyundai" 
+          class="hero-image"
+          loading="lazy"
+        >
+        <div class="image-tag-overlay">Top 10 Indian Automotive Icons • Rank #4</div>
+      </div>
+
+      <div class="car-body">
+        <div class="spec-grid">
+          <div class="spec-box">
+            <div class="spec-label">Approx. Cumulative Sales</div>
+            <div class="spec-value">Multiple lakh units; Creta has been India's best-selling mid-size SUV for several years. [84][85]</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Price (Current)</div>
+            <div class="spec-value">Roughly ₹11–20 lakh (ex-showroom, depending on variant, fuel, and transmission).</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Average Life</div>
+            <div class="spec-value">Around 12–15 years or 1.5–2.0 lakh km with timely maintenance.</div>
+          </div>
+        </div>
+
+        <div class="context-title">Context & History</div>
+        <div class="car-description">
+          <p>Launched in 2015, the Hyundai Creta created the modern mid-size SUV segment in India.</p>
+          <p>Its bold design, feature-rich cabins, and comfortable ride quickly made it a status symbol for middle-class and upper-middle-class buyers.</p>
+          <p>Continuous updates, multiple engine options (petrol, diesel, and now electric), and strong brand perception have kept Creta at the top of SUV sales charts for years.</p>
+        </div>
+
+        <div class="car-footer">
+          <span>Model #4 of 10 • Hyundai</span>
+          <a href="#top-10">Back to Top ↑</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5) Tata Nexon -->
+    <article class="car-card" id="tata-nexon">
+      <div class="car-header">
+        <div class="car-title-group">
+          <div class="car-rank-badge">#5</div>
+          <div>
+            <div class="car-meta-manufacturer">Tata Motors</div>
+            <h3 class="car-title">Tata Nexon</h3>
+          </div>
+        </div>
+        <a href="#tata-nexon" class="anchor-share-btn">#tata-nexon</a>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img 
+          src="images/nexon_hero_1789928377492.jpg" 
+          alt="Tata Nexon by Tata Motors" 
+          class="hero-image"
+          loading="lazy"
+        >
+        <div class="image-tag-overlay">Top 10 Indian Automotive Icons • Rank #5</div>
+      </div>
+
+      <div class="car-body">
+        <div class="spec-grid">
+          <div class="spec-box">
+            <div class="spec-label">Approx. Cumulative Sales</div>
+            <div class="spec-value">Several lakh units; one of India's best-selling compact SUVs, including strong EV sales. [63][70]</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Price (Current)</div>
+            <div class="spec-value">Approximately ₹7.5–14.5 lakh (ex-showroom, ICE and EV variants).</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Average Life</div>
+            <div class="spec-value">Around 12–15 years or 1.5–2.0 lakh km with regular servicing.</div>
+          </div>
+        </div>
+
+        <div class="context-title">Context & History</div>
+        <div class="car-description">
+          <p>The Tata Nexon brought together SUV styling, practical space, and a strong safety focus, earning a 5-star Global NCAP rating.</p>
+          <p>Available in petrol, diesel, and electric versions, it appeals to a wide range of buyers—from cost-conscious families to tech-savvy EV adopters.</p>
+          <p>Its robust build, comfortable ride, and growing Tata EV ecosystem have made the Nexon one of the most successful Indian SUVs of the last decade.</p>
+        </div>
+
+        <div class="car-footer">
+          <span>Model #5 of 10 • Tata Motors</span>
+          <a href="#top-10">Back to Top ↑</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 6) Maruti Wagon R -->
+    <article class="car-card" id="maruti-wagon-r">
+      <div class="car-header">
+        <div class="car-title-group">
+          <div class="car-rank-badge">#6</div>
+          <div>
+            <div class="car-meta-manufacturer">Maruti Suzuki</div>
+            <h3 class="car-title">Maruti Wagon R</h3>
+          </div>
+        </div>
+        <a href="#maruti-wagon-r" class="anchor-share-btn">#maruti-wagon-r</a>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img 
+          src="images/wagonr_hero_1789928392256.jpg" 
+          alt="Maruti Wagon R by Maruti Suzuki" 
+          class="hero-image"
+          loading="lazy"
+        >
+        <div class="image-tag-overlay">Top 10 Indian Automotive Icons • Rank #6</div>
+      </div>
+
+      <div class="car-body">
+        <div class="spec-grid">
+          <div class="spec-box">
+            <div class="spec-label">Approx. Cumulative Sales</div>
+            <div class="spec-value">Multiple generations; consistently among top 5 best-selling cars in India. [62][72]</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Price (Current)</div>
+            <div class="spec-value">Roughly ₹5.5–7.5 lakh (ex-showroom, varies by variant and fuel).</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Average Life</div>
+            <div class="spec-value">About 12–15 years or 1.5–2.0 lakh km with proper care.</div>
+          </div>
+        </div>
+
+        <div class="context-title">Context & History</div>
+        <div class="car-description">
+          <p>Known as the "tall boy" hatchback, the Maruti Wagon R offers exceptional cabin space and comfort in a compact footprint.</p>
+          <p>Its upright design gives excellent headroom and easy entry-exit, making it ideal for families and older buyers.</p>
+          <p>Strong fuel efficiency, low maintenance, and high resale value have kept the Wagon R a perennial favorite in Indian cities and towns.</p>
+        </div>
+
+        <div class="car-footer">
+          <span>Model #6 of 10 • Maruti Suzuki</span>
+          <a href="#top-10">Back to Top ↑</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 7) Maruti Dzire -->
+    <article class="car-card" id="maruti-dzire">
+      <div class="car-header">
+        <div class="car-title-group">
+          <div class="car-rank-badge">#7</div>
+          <div>
+            <div class="car-meta-manufacturer">Maruti Suzuki</div>
+            <h3 class="car-title">Maruti Dzire</h3>
+          </div>
+        </div>
+        <a href="#maruti-dzire" class="anchor-share-btn">#maruti-dzire</a>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img 
+          src="images/dzire_hero_1789928404987.jpg" 
+          alt="Maruti Dzire by Maruti Suzuki" 
+          class="hero-image"
+          loading="lazy"
+        >
+        <div class="image-tag-overlay">Top 10 Indian Automotive Icons • Rank #7</div>
+      </div>
+
+      <div class="car-body">
+        <div class="spec-grid">
+          <div class="spec-box">
+            <div class="spec-label">Approx. Cumulative Sales</div>
+            <div class="spec-value">Multiple generations; one of India's best-selling sedans, widely used as personal and fleet cars. [62][72]</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Price (Current)</div>
+            <div class="spec-value">Approximately ₹6.5–9.5 lakh (ex-showroom, depending on variant).</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Average Life</div>
+            <div class="spec-value">Around 12–15 years or 1.5–2.0 lakh km with regular maintenance.</div>
+          </div>
+        </div>
+
+        <div class="context-title">Context & History</div>
+        <div class="car-description">
+          <p>The Maruti Dzire transformed the compact sedan segment by offering sedan comfort in a small, affordable package.</p>
+          <p>Popular with both families and taxi fleets, the Dzire combines a spacious boot, comfortable rear seat, and excellent fuel efficiency.</p>
+          <p>Continuous updates in design, safety, and features have kept it a top choice for buyers who want a proper sedan without a large footprint.</p>
+        </div>
+
+        <div class="car-footer">
+          <span>Model #7 of 10 • Maruti Suzuki</span>
+          <a href="#top-10">Back to Top ↑</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 8) Mahindra Scorpio (including Scorpio N) -->
+    <article class="car-card" id="mahindra-scorpio">
+      <div class="car-header">
+        <div class="car-title-group">
+          <div class="car-rank-badge">#8</div>
+          <div>
+            <div class="car-meta-manufacturer">Mahindra & Mahindra</div>
+            <h3 class="car-title">Mahindra Scorpio (including Scorpio N)</h3>
+          </div>
+        </div>
+        <a href="#mahindra-scorpio" class="anchor-share-btn">#mahindra-scorpio</a>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img 
+          src="images/scorpio_hero_1789928416981.jpg" 
+          alt="Mahindra Scorpio by Mahindra & Mahindra" 
+          class="hero-image"
+          loading="lazy"
+        >
+        <div class="image-tag-overlay">Top 10 Indian Automotive Icons • Rank #8</div>
+      </div>
+
+      <div class="car-body">
+        <div class="spec-grid">
+          <div class="spec-box">
+            <div class="spec-label">Approx. Cumulative Sales</div>
+            <div class="spec-value">Multiple generations; Scorpio is one of India's most iconic SUVs with several lakh units sold over its life. [63][70]</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Price (Scorpio N, Current)</div>
+            <div class="spec-value">Roughly ₹13–22 lakh (ex-showroom, varies by variant and drivetrain).</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Average Life</div>
+            <div class="spec-value">Around 12–15+ years or 2.0 lakh+ km, known for rugged durability.</div>
+          </div>
+        </div>
+
+        <div class="context-title">Context & History</div>
+        <div class="car-description">
+          <p>The Mahindra Scorpio redefined Indian SUVs with its rugged design, strong engines, and true SUV character.</p>
+          <p>Widely used in cities, highways, and even rural and off-road conditions, the Scorpio built a reputation for durability and toughness.</p>
+          <p>The newer Scorpio N adds modern features, better refinement, and multiple drivetrain options while keeping the core DNA that made the Scorpio a household name.</p>
+        </div>
+
+        <div class="car-footer">
+          <span>Model #8 of 10 • Mahindra & Mahindra</span>
+          <a href="#top-10">Back to Top ↑</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 9) Maruti Baleno -->
+    <article class="car-card" id="maruti-baleno">
+      <div class="car-header">
+        <div class="car-title-group">
+          <div class="car-rank-badge">#9</div>
+          <div>
+            <div class="car-meta-manufacturer">Maruti Suzuki</div>
+            <h3 class="car-title">Maruti Baleno</h3>
+          </div>
+        </div>
+        <a href="#maruti-baleno" class="anchor-share-btn">#maruti-baleno</a>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img 
+          src="images/baleno_hero_1789928428975.jpg" 
+          alt="Maruti Baleno by Maruti Suzuki" 
+          class="hero-image"
+          loading="lazy"
+        >
+        <div class="image-tag-overlay">Top 10 Indian Automotive Icons • Rank #9</div>
+      </div>
+
+      <div class="car-body">
+        <div class="spec-grid">
+          <div class="spec-box">
+            <div class="spec-label">Approx. Cumulative Sales</div>
+            <div class="spec-value">Multiple generations; one of India's top-selling premium hatchbacks. [62][72]</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Price (Current)</div>
+            <div class="spec-value">Approximately ₹6.5–9.5 lakh (ex-showroom, depending on variant).</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Average Life</div>
+            <div class="spec-value">Around 12–15 years or 1.5–2.0 lakh km with regular servicing.</div>
+          </div>
+        </div>
+
+        <div class="context-title">Context & History</div>
+        <div class="car-description">
+          <p>The Maruti Baleno sits above the Swift in Maruti's hatchback lineup, offering more space, comfort, and features.</p>
+          <p>Its spacious cabin, smooth ride, and good fuel efficiency make it a practical choice for families and long-distance drivers.</p>
+          <p>Strong brand trust, low running costs, and high resale value have made the Baleno a consistent performer in India's competitive hatchback market.</p>
+        </div>
+
+        <div class="car-footer">
+          <span>Model #9 of 10 • Maruti Suzuki</span>
+          <a href="#top-10">Back to Top ↑</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- 10) Tata Punch -->
+    <article class="car-card" id="tata-punch">
+      <div class="car-header">
+        <div class="car-title-group">
+          <div class="car-rank-badge">#10</div>
+          <div>
+            <div class="car-meta-manufacturer">Tata Motors</div>
+            <h3 class="car-title">Tata Punch</h3>
+          </div>
+        </div>
+        <a href="#tata-punch" class="anchor-share-btn">#tata-punch</a>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <img 
+          src="images/punch_hero_1789928445353.jpg" 
+          alt="Tata Punch by Tata Motors" 
+          class="hero-image"
+          loading="lazy"
+        >
+        <div class="image-tag-overlay">Top 10 Indian Automotive Icons • Rank #10</div>
+      </div>
+
+      <div class="car-body">
+        <div class="spec-grid">
+          <div class="spec-box">
+            <div class="spec-label">Approx. Cumulative Sales</div>
+            <div class="spec-value">Rapidly growing; recently among the top monthly best-sellers in India, indicating strong cumulative adoption. [63][70]</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Price (Current)</div>
+            <div class="spec-value">Roughly ₹6–10 lakh (ex-showroom, ICE variants); EV version priced higher.</div>
+          </div>
+          <div class="spec-box">
+            <div class="spec-label">Average Life</div>
+            <div class="spec-value">Expected 12–15 years or 1.5–2.0 lakh km with proper maintenance (based on Tata's recent models).</div>
+          </div>
+        </div>
+
+        <div class="context-title">Context & History</div>
+        <div class="car-description">
+          <p>The Tata Punch is a compact SUV built on a strong, safe platform, offering SUV stance in a small, city-friendly size.</p>
+          <p>With good ground clearance, practical interiors, and multiple engine options including an EV, it targets young buyers and small families.</p>
+          <p>High safety ratings, affordable pricing, and SUV styling have helped the Punch quickly become one of India's most popular new cars.</p>
+        </div>
+
+        <div class="car-footer">
+          <span>Model #10 of 10 • Tata Motors</span>
+          <a href="#top-10">Back to Top ↑</a>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- About Section at the Bottom -->
+  <section class="about-section" id="about">
+    <div class="about-card">
+      <h3>About This Blog</h3>
+      <p>
+        This website is a curated overview of some of India's most sold and influential cars, based on historical sales data, market reports, and popular models up to 2026. Prices and specifications are indicative and may vary by city, variant, and time.
+      </p>
+    </div>
+  </section>
+
+  <!-- Simple Footer -->
+  <footer>
+    <p>© 2026 India's 10 Most Sold Cars. For educational and informational purposes only.</p>
+  </footer>
+
+  <!-- Minimal JavaScript for Mobile Menu and Smooth Navigation -->
+  <script>
+    const menuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('open');
+      });
+    }
+
+    function closeMobileMenu() {
+      if (mobileMenu) {
+        mobileMenu.classList.remove('open');
+      }
+    }
+  </script>
+</body>
+</html>

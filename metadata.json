@@ -1,0 +1,6 @@
+{
+  "name": "India's 10 Most Sold Cars Till Now",
+  "description": "A magazine-style automotive blog showcasing India's 10 most iconic and best-selling cars of all time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
